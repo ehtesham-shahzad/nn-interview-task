@@ -4,12 +4,12 @@ import { ApiResponse } from "./types.js";
 
 const API_URL = "https://api.polygonscan.com/api";
 const API_KEY = "ISSQBPBPUMPKJR6VTH864K7FUA6XDV3VK3";
-const tokenAddress = "0x7C58D971A5dAbd46BC85e81fDAE87b511431452E";
+const TOKEN_ADDRESS = "0x7C58D971A5dAbd46BC85e81fDAE87b511431452E";
 
 async function fetchTransactionHistories() {
   try {
     const response = await fetch(
-      `${API_URL}?module=account&action=tokentx&contractaddress=${tokenAddress}&startblock=0&endblock=99999999&sort=asc&apikey=${API_KEY}`,
+      `${API_URL}?module=account&action=tokentx&contractaddress=${TOKEN_ADDRESS}&startblock=0&endblock=99999999&sort=asc&apikey=${API_KEY}`,
     );
     const json = await response.json();
     return json as ApiResponse;
