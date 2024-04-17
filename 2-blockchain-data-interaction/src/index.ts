@@ -2,7 +2,7 @@ import { writeFileSync } from "fs";
 import { AsyncRequestQueue } from "./AsyncRequestQueue.js";
 import { ApiResponse, Transaction } from "./types.js";
 const API_URL = "https://api.polygonscan.com/api";
-const API_KEY = "ISSQBPBPUMPKJR6VTH864K7FUA6XDV3VK3";
+const API_KEY = "";
 const TOKEN_ADDRESS = "0x7C58D971A5dAbd46BC85e81fDAE87b511431452E";
 let counter = 0;
 let maxCount = -1;
