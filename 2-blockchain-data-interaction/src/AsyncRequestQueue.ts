@@ -5,7 +5,7 @@ export class AsyncRequestQueue {
   constructor() {
     this.queue = [];
     this.runningTask = 0;
-    this.maxConcurrentTasks = 5;
+    this.maxConcurrentTasks = 3;
   }
 
   enqueue<T>(promiseFactory: () => Promise<T>) {

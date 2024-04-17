@@ -25,3 +25,8 @@ type Result = {
   input: string;
   confirmations: string;
 };
+
+export type Transaction = {
+  address: string;
+  count: number;
+};
